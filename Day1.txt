@@ -1,0 +1,51 @@
+ntd competative programming training
+
+Day1 Thursday 06-03-2025
+
+important git command
+
+git status
+// To know the current status of our Repo
+
+git clone <url>
+//to download a repository
+
+git clone https://github.com/Harshith1238/mtd_c_py
+// example to download the Repo
+
+git pull origin main
+//command to download the updated Repo from the server to local machine
+
+To make our computer recognise our git accouny, we must run these 2 conguration commands:
+git config --global user.name "Harshith1238"
+
+git config --global user.email "sharshith657@gmail.com"
+
+STEPS TO CREATE A NEW PAT IN GITHUB:
+
+Login to github 
+Right to top corner click on your profile
+scroll down and click settings
+next window, on top left, click personal accesss tokens, click again on token classic
+(Now you may be asked to enter password)
+next, Add a note for the new PAT we are creating 
+Select Expiry -> No expiration
+Select the Top check box named Repo
+Scroll down fully and click the green button ( generate token)
+Now , copy the PAT
+Come to your gmail and mail the Pat to yourself or to one of our account (Mail Subject: GIT PAT)
+
+Now , let us sync our Remote Repo wiyh local repositoryIN other words, we are going to CLONe our Repo using the PAT.By doing so , we can perform Read-Write operations on our
+Remote Repo without having to Authenticate everytime
+
+git clone https://<PAT>@github.com/Harshith1238/mtd_c_py
+
+Commands required to upload files from local repo to remote:
+
+git add .
+//Git will mark all the files that need to ne updated
+
+git commit -m "notes files of the mtd training is added"
+// Git creates an object that will include all the files to be uploaded and also it is secured ( enctiption)
+
+git push origin main
